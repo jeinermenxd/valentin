@@ -1,0 +1,84 @@
+body {
+    background-color: #ffe6e9; /* Suave rosa pastel */
+    color: #721c24;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #c82333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p.lead {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.heart-container {
+    position: relative;
+        margin-top: 20px;
+        text-align: center;
+}
+.heart-left, .heart-right {
+    position: absolute;
+    width: 80px; /* Tamaño del corazón */
+    height: auto;
+    animation: heartbeat 1.5s infinite;
+}
+.heart-left {
+    top: -50px; /* Ajusta según la posición que desees */
+    left: 15%;
+}
+
+.heart-right {
+    top: -50px;
+    right: 15%;
+}
+.heart-animation {
+    width: 150px;
+    height: auto;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #e63946; /* Más romántico */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #d62828;
+    transform: scale(1.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe6e9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #c82333;
+}
